@@ -1,14 +1,17 @@
+//*EJERCICIO 1Crear un array llamado meses y que almacene el nombre de los doce meses del año.Mostrar por pantalla los doce nombres utilizando la función console.log().
 function ejercicio1() {
     const meses = [
         "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
         console.log(meses);
 }
+//*EJERCICIO 2A partir del siguiente array que se proporciona: var valores = [true, 5, false, "hola", "adios",2];Determinar cual de los dos elementos de texto es mayorUtilizando exclusivamente los dos valores booleanos del array, determinar los operadoresnecesarios para obtener un resultado true y otro resultado falseDeterminar el resultado de las cinco operaciones matemáticas realizadas con los doselementos numéricos
 function ejercicio2() {
     var valores = [true, 5, false, "hola", "adios", 2];
     var texto1 = valores[3]; // "hola"
     var texto2 = valores[4]; // "adios"
 }
-function ejercicio2() {
+//*EJERCICIO 3Completar las condiciones de los if del siguiente script para que los mensajes se muestrensiempre de forma correcta:
+function ejercicio3() {
     
 if(texto1 > texto2){
      console.log("El texto mayor es:", texto1, ".")
@@ -35,3 +38,79 @@ if() {
 console.log("Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2");
 }
 }
+
+function ejercico4 () {
+//*EJERCICIO 4:El cálculo de la letra del Documento Nacional de Identidad (DNI) es un proceso matemáticosencillo que se basa en obtener el resto de la división entera del número de DNI y el número23. A partir del resto de la división, se obtiene la letra seleccionándola dentro de un array deletras//*
+ //*protn = variable Por tanto si el resto de la división es 0, la letra del DNI es la T y si el resto es 3 la letra es laA. Con estos datos, elaborar un pequeño script que:Almacene en una variable el número de DNI indicado por el usuario y en otra variable laletra del DNI que se ha indicado.En primer lugar (y en una sola instrucción) se debe comprobar si el número es menor que mayor que 99999999. Si ese es el caso, se muestra un mensaje al usuario indicando queel número proporcionado no es válido y el programa no muestra más mensajes.Si el número es válido, se calcula la letra que le corresponde según el método explicadoanteriormente.Una vez calculada la letra, se debe comparar con la letra indicada por el usuario. Si nocoinciden, se muestra un mensaje al usuario diciéndole que la letra que ha indicado no escorrecta. En otro caso, se muestra un mensaje indicando que el número y la letra de DNIson correctos.//*
+
+ function ejercicio5() {
+
+var numeroDNI = parseInt(prompt("Introduce tu número de DNI:"));
+var letraUsuario = prompt("Introduce la letra de tu DNI:");
+
+var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+if (numeroDNI < 0 || numeroDNI > 99999999) {
+    console.error("El número proporcionado no es válido.");
+} 
+else {
+    var resto = numeroDNI % 23;
+    var letraCalculada = letras[resto];
+
+    if (letraCalculada !== letraUsuario.toUpperCase()) {
+        alert("La letra que ha indicado no es correcta.");
+    } else {
+        alert("El número y la letra de DNI son correctos.");
+    }
+}
+
+function ejercico5 () {
+//*EJERCICIO 5:El factorial de un número entero n es una operación matemática que consiste en multiplicatodos los factores n x (n-1) x (n-2) x ... x 1. Así, el factorial de 5 (escrito como 5!) es igual a:5! = 5 x 4 x 3 x 2 x 1 = 120Utilizando la estructura for, crear un script que calcule el factorial de un número entero.//*
+
+var numero = 5; 
+var resultado = 1;
+for (var i = numero; i > 0; i--) {
+    resultado = resultado * i;
+}
+console.log("El factorial de " + numero + " es: " + resultado);
+document.writeln("<h2>El factorial de " + numero + "! es: " + resultado + "</h2>");
+
+}
+
+//*EJERCICIO 6=Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar.Mostrar por pantalla el resultado devuelto por la función.
+
+function ejercicio6() {
+
+if (valor%2==0) //Si el if da verdadero luego es par.
+
+let par = 0
+let inpar = 0
+
+for(let i=1; i<11; i++){
+
+let num = parseInt(prompt("ingrese el ", i ,"º numero"))
+
+if (num % 2 == 0){
+
+    par++
+}
+
+else if (num % 2 == 1){
+
+    inpar++
+}
+}
+
+console.log("cantidad de valores Inpares", inpar)
+console.log("cantidad de valores Pares", par)
+
+//*EJERCICIO 7=Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas. === comparacion estricta
+ 
+pront = texto 
+texto = promp("Definir y comparar texto")
+if (texto===texto.toUpperCase)
+    }
+else if (texto=== texto.tolower(ad))
+    }
+jswddjswkdwk kekwdnwkdnw dJDLSKFdddeererqwwqweqweqweq
+
