@@ -141,3 +141,43 @@ function ejercicio10() {
     console.log("El numero: "+j+" salio "+arr[j]+" veces")
  }
 }
+
+
+//*EJERCICIO 9=Definir la siguiente jerarquía de objetos, haciendo uso de los prototipos de JavaScript:Objeto Persona con las propiedades nombre, edad y género, y el método obtDetalles(), qumuestra por pantalla las propiedades de la persona.Objeto Estudiante, que hereda de Persona, e incluye las propiedades curso y grupo y elmétodo registrar().Objeto Profesor, que hereda de Persona, e incluye las propiedades asignatura y nivel y elmétodo asignar()Crear los objetos y casos de prueba necesarios para comprobar el correcto funcionamientode la jerarquía.
+
+function ejejercicio9 (params){
+    function persona (nombre,edad,genero) {
+        this.nombre= nombre;
+        this.edad= edad;
+        this.genero=genero;
+    }
+    persona.prototype.obtDeralles= function(){
+     console.log(`'nombre: ${this.nombre}, edad: ${this.edad}, genero: ${this.genero}'`)
+    };
+    function estudiante(nombre, edad, genero.curso, grupo)
+    persona.call(this, nombre,edad,genero);
+    this.curso= this.curso;
+    this.grupo= this.grupo;
+}
+ //this=
+
+ estudiante.prototype= Object.create(persona.prototype)
+   estudiante. prototype.constructor= estudiante;
+
+   estudiante.prototype.registrar= fuction(){
+
+    console.log(`${this.nombre} ha sido registrado en el curso 
+        ${this.curso}, grupo ${this.curso}, grupo ${this.grupo}.`);
+   }
+
+
+   // dni promt datos palabra sacar espaios  replaseALL split ("") se convierte array reverse metodo arrays join ("")
+   
+   function ejercicio8() {
+
+
+var frasePalidromo = parseInt(prompt("Introduce tu nfrase palidromo:"));
+var letraPalidromo = prompt("Introduce la palabra pelidromo");
+
+var letras = "La ruta nos aporto otro paso natural"
+   }

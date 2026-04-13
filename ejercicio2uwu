@@ -1,0 +1,57 @@
+//1. Leer 2 números enteros, calcular la suma e informar el resultado.
+function ejercicio1() {
+let nuemro1= 15
+let numero2=30
+}
+let suma = numero1 + numero2;
+
+{
+console.log("el primer numero es: " + numero1);
+console.log("el segundo numero es:" + numero2);
+console.log("la suma total es: " + suma);
+
+}
+
+let num1= parseint(promt("ingresa el primer numero entero:"));
+let num2= parseintt (promt("ingresa el segundo numero entero:"));
+
+let resultado= num1 + num2;
+
+{
+alert("el resultado de la suma es:" + resultado);
+
+console.log("la suma es: " + resultado);
+}
+
+//2. Leer 4 números enteros, calcular la suma e informar el resultado.
+
+function ejercicio2() {
+let nuemro1= 5
+let numero2=10
+let numero3=15
+let numero4= 20
+}
+let suma = numero1 + numero2 + numero3 + numero4;
+{
+
+console.log("el primer numero es: " + numero1);
+console.log("el segundo numero es:" + numero2);
+console.log("el primer numero es: " + numero3);
+console.log("el segundo numero es:" + numero4);
+console.log("la suma total es: " + suma);
+}
+
+{
+  let num1= parseint(promt("ingresa el primer numero entero:"));
+let num2= parseintt (promt("ingresa el segundo numero entero:"));
+let num3= parseint(promt("ingresa el tercer numero entero:"));
+let num4= parseintt (promt("ingresa el cuarto numero entero:"));  
+
+let resultado= num1 + num2 + num3 + num4;
+{
+alert("el resultado de la suma es:" + resultado);
+
+console.log("la suma es: " + resultado);
+}
+}
+//7. Dados 6 números reales, informar el promedio de los mismos.
